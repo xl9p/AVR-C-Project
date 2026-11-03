@@ -1,0 +1,67 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "cmake.configurePreset": "avr-xc8",
+        "cmake.buildPreset": "avr-xc8",
+        "clangd.path": "/opt/Microchip/xc8-v4.00/bin/xc8-clangd",
+        "clangd.arguments": [
+            "--compile-commands-dir=build/avr-xc8"
+        ],
+        "memory-inspector.debugTypes": [
+            "arm-debugger",
+            "embedded-debug",
+            "gdb",
+            "gdbtarget",
+            "mplab-core-da"
+        ]
+    },
+    "launch": {
+        "configurations": [
+            {
+                "name": "Debug an ELF file",
+                "request": "launch",
+                "type": "mplab-core-da",
+                "program": "${workspaceFolder}/build/avr-xc8/out/firmware.elf",
+                "device": "AVR128DA28",
+                "tool": "Snap",
+                "interface": "UPDI",
+                "stopOnEntry": true
+            },
+            {
+                "name": "Flash the device (no debug)",
+                "type": "mplab-core-da",
+                "request": "launch",
+                "program": "${workspaceFolder}/build/avr-xc8/out/firmware.elf",
+                "device": "AVR128DA28",
+                "tool": "Snap",
+                "interface": "UPDI",
+                "noDebug": true
+            },
+            {
+                "name": "Erase the device",
+                "type": "mplab-core-da",
+                "request": "launch",
+                "noDebug": true,
+                "eraseOnly": true,
+                "program": "${workspaceFolder}/build/avr-xc8/out/firmware.elf",
+                "device": "AVR128DA28",
+                "tool": "Snap",
+                "interface": "UPDI"
+            },
+            {
+                "name": "Attach to an ELF file",
+                "type": "mplab-core-da",
+                "request": "attach",
+                "program": "${workspaceFolder}/build/avr-xc8/out/firmware.elf",
+                "device": "AVR128DA28",
+                "tool": "Snap",
+                "interface": "UPDI",
+                "stopAtConnect": true
+            }
+        ]
+    },
+}

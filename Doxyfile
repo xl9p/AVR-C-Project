@@ -1,0 +1,20 @@
+PROJECT_NAME           = "AVR C Template"
+PROJECT_BRIEF          = A C template for AVR microcontrollers.
+PROJECT_NUMBER         = 0.1
+
+PROJECT_LOGO           =
+PROJECT_ICON           =
+
+OUTPUT_DIRECTORY       = docs/build
+CREATE_SUBDIRS         = NO
+CREATE_SUBDIRS_LEVEL   = 8
+
+DOXYFILE_ENCODING      = UTF-8
+ALLOW_UNICODE_NAMES    = NO
+OUTPUT_LANGUAGE        = English
+
+TAB_SIZE               = 4
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+TIMESTAMP              = YES

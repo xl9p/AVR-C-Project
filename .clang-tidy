@@ -1,0 +1,37 @@
+---
+Checks: >
+  bugprone-*,
+  clang-analyzer-*,
+  performance-*,
+  readability-*,
+  -readability-magic-numbers,
+  -readability-function-cognitive-complexity,
+  -altera-struct-pack-align,
+  misc-header-include-cycle,
+  misc-confusable-identifiers,
+  misc-definitions-in-headers,
+  misc-redundant-expression,
+  misc-unused-parameters,
+  misc-use-internal-linkage,
+  modernize-avoid-setjmp-longjmp,
+  modernize-use-bool-literals,
+  modernize-use-designated-initializers
+WarningsAsErrors: ''
+HeaderFileExtensions:
+  - ''
+  - h
+  - hh
+  - hpp
+  - hxx
+ImplementationFileExtensions:
+  - c
+  - cc
+  - cpp
+  - cxx
+HeaderFilterRegex: ''
+ExcludeHeaderFilterRegex: ''
+User:            dev
+CheckOptions:    {}
+SystemHeaders:   false
+...
+

@@ -1,0 +1,109 @@
+---
+Language: Cpp
+
+# General
+BasedOnStyle: LLVM
+ColumnLimit: 90
+
+# Indentation
+UseTab: Never
+BracedInitializerIndentWidth: 6
+ContinuationIndentWidth: 6
+TabWidth: 6
+IndentWidth: 6
+IndentCaseLabels: true
+IndentCaseBlocks: false
+
+# Breaks
+BreakStringLiterals: true
+BreakBeforeTernaryOperators: true
+BreakBeforeBinaryOperators: NonAssignment
+PenaltyBreakBeforeFirstCallParameter: 1
+AlwaysBreakAfterDefinitionReturnType: All
+BreakAfterReturnType: TopLevelDefinitions
+
+# Braces
+# BreakBeforeBraces: Allman
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseExpressionOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLoopsOnASingleLine: false
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterExternBlock: false # To avoid indenting extern blocks
+  AfterClass:      true
+  AfterControlStatement: true
+  AfterEnum:       true
+  AfterFunction:   true
+  AfterNamespace:  true
+  AfterObjCDeclaration: true
+  AfterStruct:     true
+  AfterUnion:      true
+  BeforeCatch:     true
+  BeforeElse:      true
+  IndentBraces:    false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+
+
+# Spacing
+SpacesInSquareBrackets: false
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses: false
+  InConditionalStatements: false
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  Other: false
+SpacesInConditionalStatement: false
+SpacesBeforeTrailingComments: 1
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAroundPointerQualifiers: Both
+SpaceBeforeSquareBrackets: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeCaseColon: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDefinitionName: true
+  AfterFunctionDeclarationName: false
+  AfterForeachMacros: true
+  AfterIfMacros: true
+  BeforeNonEmptyParentheses: false
+
+# Pointers
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+# Alignment
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignTrailingComments: true
+AlignAfterOpenBracket: true
+IndentPPDirectives: AfterHash
+
+# Misc
+SortIncludes: false
+MaxEmptyLinesToKeep: 1
+LineEnding: LF
+InsertNewlineAtEOF: true
