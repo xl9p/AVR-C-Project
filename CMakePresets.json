@@ -9,7 +9,7 @@
     {
       "name": "avr-gnu",
       "displayName": "AVR GNU",
-      "generator": "Unix Makefiles",
+      "generator": "Ninja",
       "binaryDir": "${sourceDir}/build/avr-gnu",
       "toolchainFile": "${sourceDir}/cmake/toolchains/avr-gnu.cmake",
       "cacheVariables": {
@@ -19,7 +19,7 @@
     {
       "name": "avr-xc8",
       "displayName": "AVR XC8",
-      "generator": "Unix Makefiles",
+      "generator": "Ninja",
       "binaryDir": "${sourceDir}/build/avr-xc8",
       "toolchainFile": "${sourceDir}/cmake/toolchains/avr-xc8.cmake",
       "cacheVariables": {
